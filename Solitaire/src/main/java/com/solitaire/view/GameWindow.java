@@ -33,10 +33,6 @@ public class GameWindow extends JFrame {
         setLocationRelativeTo(null);
     }
 
-
-    // --- Inside GameWindow.java ---
-
-
     private void setupLayout() {
         // 1. STOCK AND WASTE (Top Left)
         PileView stockView = createPileView(board.getStock(), false);

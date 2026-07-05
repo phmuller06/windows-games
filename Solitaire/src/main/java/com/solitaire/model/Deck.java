@@ -43,7 +43,6 @@ public class Deck {
         if (cards.isEmpty()) {
             return null;
         }
-        // Remove from the end of the list for O(1) performance
         return cards.remove(cards.size() - 1);
     }
 

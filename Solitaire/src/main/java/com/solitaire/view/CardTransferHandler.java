@@ -1,9 +1,6 @@
 package com.solitaire.view;
 
 import com.solitaire.controller.GameEngine;
-import com.solitaire.model.Card;
-import com.solitaire.model.Pile;
-import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
@@ -39,8 +36,6 @@ public class CardTransferHandler extends TransferHandler {
             return false;
         }
 
-        // In a real scenario, we'd get the card being dragged and the target pile
-        // and call engine.canMoveToTableau() or engine.canMoveToFoundation().
         return true;
     }
 

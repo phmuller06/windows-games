@@ -7,8 +7,6 @@ import com.solitaire.model.GameBoard;
 import com.solitaire.model.Pile;
 import java.util.List;
 
-import java.util.Optional;
-
 /**
  * The brain of the game. Validates moves and manages game state transitions.
  */
@@ -144,7 +142,7 @@ public class GameEngine {
             foundation.push(card);
 
             if (checkWinCondition()) {
-                // Here you would trigger the win event in the GUI
+
                 System.out.println("Congratulations! You won!");
                 return true;
             }
